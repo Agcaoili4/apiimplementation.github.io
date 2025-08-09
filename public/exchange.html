@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <li><a href="index.html">Weather</a></li>
+      <li><a href="exchange.html">Currency Exchange</a></li>
+    </div>
+    <div class="container">
+      <h1>Exchange Rate</h1>
+      <p>Enter the exchange rate over here</p>
+      <form id="exchangeForm">
+        <label for="base">From:</label>
+        <select id="base" required>
+          <option value="">Select currency</option>
+          <option value="USD">USD - US Dollar</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="NZD">NZD - New Zealand Dollar</option>
+          <option value="PHP">PHP - Philippine Peso</option>
+          <option value="CNY">CNY - Chinese Yuan</option>
+          <option value="INR">INR - Indian Rupee</option>
+        </select>
+
+        <label for="change">To:</label>
+        <select id="change" required>
+          <option value="">Select currency</option>
+          <option value="USD">USD - US Dollar</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="NZD">NZD - New Zealand Dollar</option>
+          <option value="PHP">PHP - Philippine Peso</option>
+          <option value="CNY">CNY - Chinese Yuan</option>
+          <option value="INR">INR - Indian Rupee</option>
+        </select>
+
+        <button type="submit">Get Rate</button>
+      </form>
+
+      <p id="exchangeAlert"></p>
+      <div id="exchangeResult"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
